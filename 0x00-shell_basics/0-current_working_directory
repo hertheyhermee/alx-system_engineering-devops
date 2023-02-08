@@ -1,2 +1,2 @@
 #!/bin/bash
-The absolute path of the current working directory is: /alx-system_engineering-devops/0x00-shell_basics
+pwd
