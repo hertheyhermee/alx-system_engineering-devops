@@ -1,0 +1,42 @@
+Title: The Journey of a Web Request: From Your Browser to Google's Servers
+
+Introduction:
+
+Have you ever wondered what happens behind the scenes when you type "https://www.google.com" into your web browser and press Enter? In this blog post, we'll take a deep dive into the fascinating journey of a web request, exploring each step from the moment you hit Enter until you see Google's search page.
+
+1. **DNS Request:**
+   - As soon as you press Enter, your browser initiates a DNS (Domain Name System) request to convert "www.google.com" into an IP address.
+   - The DNS resolver, which could be provided by your ISP or a public DNS server like Google's 8.8.8.8, helps your browser find the IP address associated with the domain.
+
+2. **TCP/IP:**
+   - Armed with the IP address, your browser establishes a TCP (Transmission Control Protocol) connection to the web server at that IP.
+   - IP is responsible for routing data packets, while TCP ensures a reliable, ordered, and error-checked connection.
+
+3. **Firewall:**
+   - Before reaching Google's servers, the request passes through various network firewalls. Firewalls act as gatekeepers, filtering out potentially harmful traffic based on predefined rules.
+
+4. **HTTPS/SSL:**
+   - If "https://" is in the URL, as it is with Google, your browser initiates an SSL/TLS (Secure Sockets Layer/Transport Layer Security) handshake.
+   - This cryptographic protocol ensures that the data exchanged between your browser and the web server remains private and secure.
+
+5. **Load-Balancer:**
+   - Many high-traffic websites, including Google, use load balancers to distribute incoming requests across multiple servers.
+   - Load balancers optimize resource utilization, enhance performance, and ensure high availability.
+
+6. **Web Server:**
+   - The load balancer directs your request to one of Google's many web servers.
+   - The web server processes your request, which, in this case, might involve serving Google's search page.
+
+7. **Application Server:**
+   - For more complex tasks, like personalized search results or handling user accounts, the web server may communicate with an application server.
+   - The application server processes dynamic content and interacts with databases.
+
+8. **Database:**
+   - To fetch relevant data, such as search results or user information, the application server queries a database.
+   - Databases store, manage, and retrieve data efficiently.
+
+Conclusion:
+
+In a matter of seconds, your seemingly simple act of typing a URL and hitting Enter triggers a complex chain of events involving DNS resolution, TCP/IP communication, security measures like SSL/TLS, load balancing, web servers, application servers, and databases. This seamless orchestration enables you to access websites like Google in a secure and efficient manner.
+
+Understanding this process not only deepens your appreciation for the magic of the internet but also equips you with valuable knowledge about how web applications work. So next time you perform a web search, remember the intricate journey your request embarks on before delivering those search results to your screen.
