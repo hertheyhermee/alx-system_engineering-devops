@@ -1,4 +1,4 @@
-#Issue Summary:
+# Issue Summary:
 
 * Duration: The outage occurred on October 15, 2023, from 10:00 AM to 1:30 PM (UTC).
 
